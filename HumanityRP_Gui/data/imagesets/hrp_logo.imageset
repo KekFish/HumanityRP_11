@@ -1,0 +1,20 @@
+ImageSetClass {
+ Name "hrp_logo"
+ RefSize 1538 317
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{1134F15C5A0657BF}HumanityRP_11/HumanityRP_Gui/data/logo_big.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass main_logo {
+   Name "main_logo"
+   Pos 0 0
+   Size 1538 317
+   Flags 0
+  }
+ }
+ Groups {
+ }
+}
