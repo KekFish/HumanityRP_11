@@ -10,17 +10,17 @@ class ActionReadPassport: ActionContinuousBase
 		m_StanceMask = DayZPlayerConstants.STANCEMASK_CROUCH | DayZPlayerConstants.STANCEMASK_ERECT | DayZPlayerConstants.STANCEMASK_PRONE;
 	}
 	
-	string GetText()
+	override string GetText()
 	{
 		return "#read_note";
 	}
 	
-	void CreateConditionComponents()
+	override void CreateConditionComponents()
 	{	
 		m_ConditionItem = new CCINonRuined;
 		m_ConditionTarget = new CCTNone;//CCTNonRuined(TARGET_DISTANCE);
 	}
-	bool ActionCondition(PlayerBase player, ActionTarget target, ItemBase item)
+	override bool ActionCondition(PlayerBase player, ActionTarget target, ItemBase item)
 	{
 		if ((HRP_BlankPassport.Cast(item)))
 			return true;

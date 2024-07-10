@@ -1,7 +1,7 @@
 modded class PluginRepairing extends PluginBase
 {
 	
-    bool CanRepair( ItemBase repair_kit, Object item, string damage_zone = "" )
+    override bool CanRepair( ItemBase repair_kit, Object item, string damage_zone = "" )
 	{
 		int state = item.GetHealthLevel(damage_zone);
 		

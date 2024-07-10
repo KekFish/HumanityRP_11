@@ -174,7 +174,7 @@ class ActionHealBiteTarget: ActionSurgeryBase
 		return true;
 	}
 
-	bool ConditionSurgery( ItemBase item, PlayerBase player, bool self)
+	override bool ConditionSurgery( ItemBase item, PlayerBase player, bool self)
 	{	
 		return (player.GetSybStats().m_zombieBite > 0 && item.m_IsHeated);
 	}

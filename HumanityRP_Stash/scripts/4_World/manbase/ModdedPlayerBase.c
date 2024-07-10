@@ -44,7 +44,7 @@ modded class PlayerBase
 	bool GetStashSearchSound()
 	{
 
-		return m_StashSearchSound
+		return m_StashSearchSound;
 
 	}
 	

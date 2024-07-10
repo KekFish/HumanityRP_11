@@ -48,7 +48,7 @@ modded class SlotsContainer
 			}
     };
 };
-
+#ifdef DZM_VPPAdminToolsScripts
 modded class MenuCommandsConsole
 {
 
@@ -60,7 +60,7 @@ modded class MenuCommandsConsole
 	}
 
 }
-
+#endif
 modded class PlayerContainer
 {
 	override void UpdateInterval()

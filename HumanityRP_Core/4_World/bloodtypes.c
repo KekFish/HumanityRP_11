@@ -2,7 +2,7 @@ modded class BloodTypes
 {
 
 	
-	static int GenerateBloodType()
+	override static int GenerateBloodType()
 	{
 		int types[NUM_OF_BLOOD_TYPES] 		= {LIQUID_BLOOD_0_P, LIQUID_BLOOD_0_N, LIQUID_BLOOD_A_P, LIQUID_BLOOD_A_N, LIQUID_BLOOD_B_P, LIQUID_BLOOD_B_N, LIQUID_BLOOD_AB_P, LIQUID_BLOOD_AB_N};
 		int probability[NUM_OF_BLOOD_TYPES] 	= {4,2,20,20,15,15,7,7};

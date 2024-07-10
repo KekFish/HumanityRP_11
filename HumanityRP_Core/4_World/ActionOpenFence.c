@@ -1,3 +1,4 @@
+#ifdef BaseBuildingPlus
 modded class ActionOpenFence
 {
     override bool ActionCondition(PlayerBase player, ActionTarget target, ItemBase item)
@@ -74,3 +75,4 @@ modded class ActionOpenFence
         return super.ActionCondition(player, target, item);
     }
 }
+#endif

@@ -32,12 +32,14 @@
 	// // "HumanityRP_11/HumanityRP_Gui/data/loading/30.edds",
 	// // "HumanityRP_11/HumanityRP_Gui/data/loading/31.edds",
 	};
+	#ifdef DZM_VPPAdminToolsScripts
 modded class VPPATUIConstants
 {
 
 	const static string MenuPlayerManager 			 = "HumanityRP_11/HumanityRP_Gui/layouts/vpp_playermanager.layout";
 
 };
+	#endif
 modded class LoadingScreen
 {
 	void LoadingScreen(DayZGame game)

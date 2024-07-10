@@ -12,7 +12,7 @@ class ActionCraftScrapMetal: ActionContinuousBase
 		m_StanceMask = DayZPlayerConstants.STANCEMASK_ERECT;
 		m_FullBody = true;
 		m_LockTargetOnUse = false;	
-		m_Text = m_Text_o
+		m_Text = m_Text_o;
 
 	}
 

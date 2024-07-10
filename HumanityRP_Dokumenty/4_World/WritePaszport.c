@@ -21,17 +21,17 @@ class ActionWritePassport: ActionContinuousBase
 		m_StanceMask = DayZPlayerConstants.STANCEMASK_CROUCH | DayZPlayerConstants.STANCEMASK_ERECT | DayZPlayerConstants.STANCEMASK_PRONE;
 	}
 	
-	string GetText()
+	override string GetText()
 	{
 		return "#write_note";
 	}
 	
-	void CreateConditionComponents()
+	override void CreateConditionComponents()
 	{	
 		m_ConditionItem = new CCINonRuined;
 		m_ConditionTarget = new CCTNone;//CCTNonRuined(TARGET_DISTANCE);
 	}
-	bool ActionCondition(PlayerBase player, ActionTarget target, ItemBase item)
+	override bool ActionCondition(PlayerBase player, ActionTarget target, ItemBase item)
 	{
 		if ((item && item.ConfigIsExisting("writingColor") && target.GetObject() && HRP_BlankPassport.Cast(target.GetObject())) && !target.GetObject().IsInherited(HRP_Passport) || (target.GetObject() && target.GetObject().ConfigIsExisting("writingColor") && item && HRP_BlankPassport.Cast(item) && !item.IsInherited(HRP_Passport)))
 			return true;

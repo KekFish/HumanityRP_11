@@ -1,3 +1,4 @@
+#ifdef BaseBuildingPlus
 modded class BBP_Blueprint extends BBP_CRAFTINGBOOK_BASE{
 
 	override void RegisterRecipies(){
@@ -29,3 +30,4 @@ modded class BBP_Blueprint extends BBP_CRAFTINGBOOK_BASE{
 	}
 
 }
+#endif

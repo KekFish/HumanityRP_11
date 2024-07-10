@@ -1,3 +1,4 @@
+/*
 modded class ExpansionChatLineBase: ExpansionScriptView
 {
 
@@ -29,4 +30,5 @@ modded class ExpansionChatLineBase: ExpansionScriptView
 
             return path;
         }
-}
+} 
+*/

@@ -28,7 +28,7 @@ class LightRainfall: NamWeatherEvent
 		super.InitPhaseServer();
 	}
 
-	int GetEventCooldown()
+	override int GetEventCooldown()
 	{
 		return 5400;
 	}
@@ -135,7 +135,7 @@ class Rainfall: NamWeatherEvent
 		super.OnEventEndServer();
 	}
 
-	int GetEventCooldown()
+	override int GetEventCooldown()
 	{
 		return 5400;
 	}
@@ -201,7 +201,7 @@ class HeavyRainfall: NamWeatherEvent
 		super.MidPhaseServer();
 	}
 
-	int GetEventCooldown()
+	override int GetEventCooldown()
 	{
 		return 5400;
 	}

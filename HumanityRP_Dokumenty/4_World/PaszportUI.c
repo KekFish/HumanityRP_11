@@ -156,7 +156,7 @@ class PassportMenuBase extends UIScriptedMenu {
 	
 		
 	
-			auto params = new Param3<HRP_BlankPassport, PassportDataTransfer, PlayerBase>(m_Passport, m_PassportData, GetGame().GetPlayer());
+			auto params = new Param3<HRP_BlankPassport, PassportDataTransfer, PlayerBase>(m_Passport, m_PassportData, PlayerBase.Cast(GetGame().GetPlayer()));
 	
             GetGame().RPCSingleParam(player, PassRPC.SAVEPASSPORT, params, true);
 		
@@ -177,14 +177,14 @@ class PassportMenuBase extends UIScriptedMenu {
 		}
 	}
 	
-	private void LockControls()
+	override private void LockControls()
     {
         GetGame().GetMission().PlayerControlDisable(INPUT_EXCLUDE_ALL);
         GetGame().GetUIManager().ShowUICursor( true );
         GetGame().GetMission().GetHud().Show( false );
     }
 
-    private void UnlockControls()
+    override private void UnlockControls()
     {
         GetGame().GetMission().PlayerControlEnable(false);
         GetGame().GetInput().ResetGameFocus();

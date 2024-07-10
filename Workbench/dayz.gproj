@@ -31,11 +31,17 @@ GameProjectClass {
 				"DabsFramework/gui/icons/light.imageset"
 				"DabsFramework/gui/icons/regular.imageset"
 				"DabsFramework/gui/icons/solid.imageset"
+				"HumanityRP_11/HumanityRP_Gui/data/imagesets/gui.imageset"
+	  			"HumanityRP_11/HumanityRP_Gui/data/imagesets/hrp_logo.imageset"
+				"HumanityRP_11/HumanityRP_Gui/data/styles/hrp_styles.styles"
+
 			}
 			widgetStyles {
 				"gui/looknfeel/dayzwidgets.styles" 
 				"gui/looknfeel/widgets.styles"
 				"DabsFramework/gui/looknfeel/prefabs.styles"
+				"HumanityRP_11/HumanityRP_Gui/data/styles/hrp_styles.styles"
+
 			}
 			ScriptModules {
 				ScriptModulePathClass {

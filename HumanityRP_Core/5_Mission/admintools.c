@@ -1,3 +1,4 @@
+#ifdef DZM_VPPAdminToolsScripts
 modded class MenuPlayerManager extends AdminHudSubMenu
 {	
 	//Stats Sliders
@@ -264,3 +265,4 @@ modded class MenuPlayerManager extends AdminHudSubMenu
 	
 	
 }
+#endif

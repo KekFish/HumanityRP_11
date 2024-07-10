@@ -10,10 +10,6 @@ modded class ActionConstructor
 		actions.Insert(ActionInjectInjectorSelf);
 		actions.Insert(ActionSurgeryTarget);
 		actions.Insert(ActionSurgerySelf);
-		actions.Insert(ActionUseSalveTarget);
-		actions.Insert(ActionUseSalveSelf);
-		actions.Insert(ActionCheckName);
-		actions.Insert(ActionSayName);
 		actions.Insert(ActionSleep);
         actions.Insert(ActionCutBookPage);
 		//actions.Insert(ActionSearchTargetInventory);

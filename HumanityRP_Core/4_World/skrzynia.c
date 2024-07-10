@@ -55,6 +55,7 @@ modded class CraftWoodenCrate extends RecipeBase
 		m_ResultReplacesIngredient[0] = -1;// value == -1 means do nothing; a value >= 0 means this result will transfer item propertiesvariables, attachments etc.. from an ingredient value
 	}
 };
+#ifdef bl_shared_data
 modded class bl_CraftOldCrate extends RecipeBase
 {	
 	override void Init()
@@ -112,3 +113,4 @@ modded class bl_CraftOldCrate extends RecipeBase
 		m_ResultReplacesIngredient[0] = -1;// value == -1 means do nothing; a value >= 0 means this result will transfer item propertiesvariables, attachments etc.. from an ingredient value
 	}
 };
+#endif

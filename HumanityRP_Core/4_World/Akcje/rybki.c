@@ -1,3 +1,4 @@
+#ifdef apokot_fish
 modded class ActionApokotSearchInWater: ActionContinuousBase
 {
     override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
@@ -5,3 +6,4 @@ modded class ActionApokotSearchInWater: ActionContinuousBase
         return false;
     }
 }
+#endif

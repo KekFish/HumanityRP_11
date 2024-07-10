@@ -31,11 +31,11 @@ modded class MissionGameplay
     {
         super.OnInit();
         
-        
+        #ifdef DZM_VPPAdminToolsScripts
         VPPKeybindsManager.RegisterBind("UACopyClassName", VPPBinds.Press, "CopyClassNameToClipboard", this);
-        
+        #endif
     }
-
+		#ifdef DZM_VPPAdminToolsScripts
     void CopyClassNameToClipboard()
     {
         if ((!m_Toggles) || (!m_ToolsToggled))
@@ -68,5 +68,6 @@ modded class MissionGameplay
             GetVPPUIManager().DisplayNotification(notificationMsg, "V++ Admin Tools:", 10.0);
         }
     }
+	#endif
 
 }

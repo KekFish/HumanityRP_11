@@ -7,10 +7,10 @@ modded class Barrel_ColorBase : DeployableContainer_Base
     void hrp_AutomaticClose(bool OnOpen )
     {
 
-		nm_Kraxe m_Parent = nm_Kraxe.Cast( this.GetHierarchyParent());
-		if(m_Parent)
+		ItemBase m_Parent = ItemBase.Cast( this.GetHierarchyParent());
+		if(m_Parent && m_Parent.GetType() == "nm_Kraxe")
 		{
-			HRPLog("PARENT PRESENT NOT CLOSING")
+			HRPLog("PARENT PRESENT NOT CLOSING");
 			if ( m_TimerToClose.IsRunning() )
 			{
 				m_TimerToClose.Stop();

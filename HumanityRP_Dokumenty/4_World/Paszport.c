@@ -48,7 +48,7 @@ class HRP_BlankPassport extends ItemBase
 		return Fireplace.CanIgniteEntityAsFireplace( this );
 	}
 
-    void SetActions()
+    override void SetActions()
 	{
 		super.SetActions();
 

@@ -28,7 +28,7 @@ modded class Land_FuelStation_Feed extends FuelStation
 {
 	
 	//! Returns true if this stand is functional
-	bool HasFuelToGive()
+	override bool HasFuelToGive()
 	{
 		return false;
 	}

@@ -22,7 +22,7 @@ modded class PlayerBase
 	}
 
 }
-
+#ifdef DZM_VPPAdminToolsScripts
 modded class ChatCommandManager
 {
 
@@ -36,7 +36,7 @@ modded class ChatCommandManager
 		
     }
 }
-
+#endif
 modded class EVRStorm
 {
 
@@ -63,7 +63,7 @@ modded class EVRStorm
 	}
 
 }
-
+#ifdef mah_cooker
 modded class vfx_the_thing: House
 {	
     protected hrp_spotlight m_Light;
@@ -128,7 +128,7 @@ modded class vfx_the_thing: House
 	
 	
 }
-
+#endif
 modded class EVRStorm
 {
 
