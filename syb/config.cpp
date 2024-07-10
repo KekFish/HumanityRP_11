@@ -20,11 +20,6 @@ class CfgMods {
 				files[] = {"HumanityRP_11/syb/scripts/4_World"};
 			};
 
-			class missionScriptModule {
-				value = "";
-				files[] = {"HumanityRP_11/syb/scripts/5_Mission"};
-			};
-
 			class imageSets {
 				files[] = { };
 			};

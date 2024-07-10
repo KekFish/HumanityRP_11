@@ -54,16 +54,6 @@ class CfgMods
 		type = "mod";
 		inputs=""; //This it path to the inputs.xml for defining your keybinds more to follow on this part
 		dependencies[] = {"World","gui","Mission"};
-		class defs
-		{
-			
-			class worldScriptModule
-			{
-				value = "";
-				files[] = {"HumanityRP_11/HumanityRP_ItemFixes/4_World"};
-			};
-			
-		};
 	};
 };
 class CfgAmmo
